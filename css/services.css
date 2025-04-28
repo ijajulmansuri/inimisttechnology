@@ -1,0 +1,215 @@
+
+    /*------------------- digital marketing page----------------------------- */
+    .top-section {
+      background-color: #5c2d91;
+      color: white;
+      padding: 100px 20px 150px;
+      position: relative;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+
+    /* White Background after Triangle */
+    .bottom-section {
+      background-color: white;
+      padding: 80px 20px;
+    }
+
+    .service-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .service-icon {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 30px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+    .service-icon:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .awards img {
+      width: 80px;
+      margin: 10px;
+    }
+
+    /* Contact Form */
+    .contact-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0px 20px rgba(0,0,0,0.1);
+    }
+    .btn-submit {
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 30px;
+      transition: 0.3s;
+    }
+    .btn-submit:hover {
+      background-color: #e64a19;
+    }
+
+    .text-purple {
+      color: #5c2d91;
+    }
+
+    .stat-card {
+      border: 1px solid #eee;
+      transition: all 0.3s;
+    }
+    .stat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+  .service-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  background: #6f42c1;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* Fade in animation */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
+}
+/*------------------- digital marketing page end ----------------------------- */
+
+/*------------------- web development  page start----------------------------- */
+  #faqSection {
+    background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+    padding: 40px;
+    border-radius: 20px;
+  }
+
+  .faq-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Light transparency */
+    transition: transform 0.3s ease;
+  }
+
+  .faq-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .faq-question {
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .faq-toggle {
+    font-size: 18px;
+    color: #666;
+    transition: transform 0.3s ease;
+  }
+
+  .faq-item:hover .faq-toggle {
+    color: #0d6efd;
+  }
+
+  .faq-item .faq-answer {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+
+
+/*------------------- web development  page end----------------------------- */
+
+
+#mobileAppDev {
+    background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+    border-radius: 10px;
+    padding: 40px 0;
+  }
+
+  .service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .highlight {
+    background-color: #eaf4ff;
+  }
+
+  .service-icon i {
+    transition: color 0.3s ease;
+  }
+
+  .service-card:hover .service-icon i {
+    color: #0d6efd;
+  }
+
+  .section-title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .expert-label {
+    font-size: 12px;
+    color: #0d6efd;
+  }
+
+  .developer-role {
+    font-size: 14px;
+    color: #6c757d;
+  }
+
+  /* Small screen adjustments */
+  @media (max-width: 767px) {
+    .service-card {
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+
+
+  

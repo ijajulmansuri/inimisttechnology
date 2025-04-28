@@ -1,0 +1,647 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Inimist Technology</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/service.css">
+    
+     <!-- AOS CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+     <!-- Include Animate.css for smooth animations --> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" /> 
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+<!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<!-- CSS for gradient and hover effects -->
+<style>
+  #faqSection {
+    background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+    padding: 40px;
+    border-radius: 20px;
+  }
+
+  .faq-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Light transparency */
+    transition: transform 0.3s ease;
+  }
+
+  .faq-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .faq-question {
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .faq-toggle {
+    font-size: 18px;
+    color: #666;
+    transition: transform 0.3s ease;
+  }
+
+  .faq-item:hover .faq-toggle {
+    color: #0d6efd;
+  }
+
+  .faq-item .faq-answer {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+</style>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!------------------------------- Topbar Start ------------------------------------->
+    <div class="container-fluid bg-dark d-none d-md-flex">
+        <div class="container">
+            <div class="d-flex justify-content-between topbar">
+                <div class="top-info">
+                    <div class="top-info">
+                        <small class="me-3 text-white"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Mohali Tower,Mohali</small>
+                        <small class="me-3 text-white"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a><img src="img/email.png" alt="inimisttech Logo" class="img-fluid" style="max-height: 50px;"></small>
+                    </div>
+
+                </div>
+                <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your
+                        Business</small></div>
+                <div class="top-link">
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i
+                            class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i
+                            class="fab fa-twitter text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i
+                            class="fab fa-instagram text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i
+                            class="fab fa-linkedin-in text-primary"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------- Topbar End --------------------------------->
+        
+    <!---------------------------------- Navbar Start -------------------------->
+    <div class="container-fluid bg-mycolor">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo2.png" alt="inimisttech Logo" class="img-fluid" style="max-height: 50px;">
+                </a>
+
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu rounded">
+                                <a href="web-development.html" class="dropdown-item">Web Development</a>
+                                <a href="app-development.html" class="dropdown-item">App Development</a>
+                                <a href="uiux.html" class="dropdown-item">UI/UX Design</a>
+                                <a href="digital.html" class="dropdown-item">Digital Marketing</a>
+                                <a href="seo.html" class="dropdown-item">SEO Services</a>
+                            </div>
+                        </div>
+
+                        <a href="project.html" class="nav-item nav-link">Projects</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Team</a>
+                            <div class="dropdown-menu rounded">
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="career.html" class="dropdown-item">Career </a>
+                            </div>
+                        </div>
+                        <a href="project.html" class="nav-item nav-link">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+
+                    </div>
+                </div>
+
+                <div class="d-none d-xl-flex flex-shirink-0">
+                    <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                        <a href="" class="position-relative animated tada infinite">
+                            <i class="fa fa-phone-alt text-white fa-2x"></i>
+                            <div class="position-absolute" style="top: -7px; left: 20px;">
+                                <span><i class="fa fa-comment-dots text-dark"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column pe-2">
+                        <span class="text-gray">Have any questions?</span>
+                        <span class="text-dark">Call: +91 9876831310</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!----------------------------------- Navbar End -------------------------------->
+
+
+    <!--------------------------- Page Header Start ------------------->
+    <div class="container-fluid page-header py-5">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-white mb-4 animated slideInDown">Web Development</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="web-development.html">Web Development</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+<!-- --------------------------Page Header End --------------------->
+
+
+<!----------------------- Services Section start -------------------------------->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="text-center mb-5 px-3">
+      <h2 class="fw-bold text-primary mb-3" data-aos="fade-down" data-aos-duration="1000">
+        Transform Your Business With Our Website App Development Company
+      </h2>
+      <h4 class="text-dark fw-normal" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        Innovate, Captivate, Succeed!
+      </h4>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row align-items-center gx-5 gy-5">
+      <!-- Left Column: Text Content -->
+      <div class="col-lg-6 px-3" data-aos="fade-right" data-aos-delay="400">
+        <p class="text-dark fs-6 mb-4">
+          Open the window to endless possibilities with an amazing website that generates traffic. At 
+          <strong class="text-primary">Inimist Technology</strong>, we help start-ups, SMBs, and seasoned enterprises harness the full potential of their brand and elevate their businesses to new heights.
+        </p>
+        <p class="text-dark fs-6 mb-4">
+          We also provide services as a <strong class="text-primary">mobile app development company</strong>, offering custom mobile experiences to boost revenue and engage your target audience. Leverage our expertise in full-fledged 
+          <strong class="text-primary">digital marketing</strong> solutions.
+        </p>
+
+        <!-- Improved Button -->
+        <div class="text-center text-md-start" data-aos="fade-up" data-aos-delay="600">
+          <a href="#contact" class="btn btn-primary px-5 py-3 rounded-pill shadow-lg" style="font-weight: 600; font-size: 1rem;">
+             Get in Touch
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Image -->
+      <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-delay="500">
+        <div class="position-relative d-inline-block">
+          <img src="img/about-2.jpg" alt="Website Development Services" 
+               class="img-fluid rounded-4 shadow-lg" 
+               style="max-width: 100%; width: 380px; border: 5px solid #ffffff;">
+          <!-- Optional Decorative Background -->
+          <div style="position: absolute; top: -20px; left: -20px; width: 100%; height: 100%; background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%); z-index: -1; border-radius: 20px; filter: blur(30px); opacity: 0.5;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!----------------------- Services Section end -------------------------------->
+
+<!--------------- Our Web Design and Web Development Services ----------------->
+<section class="py-5 bg-white" id="services">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3 text-dark" data-aos="fade-down" data-aos-duration="1000">
+      Web Development Technologies We Specialize In
+    </h2>
+    <p class="text-muted mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      Building powerful, modern, and scalable web solutions using the most trusted technologies in the industry.
+    </p>
+    <div class="row g-4">
+
+      <!-- React.js Development -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="position-relative">
+          <!-- Gradient Background -->
+          <div style="position: absolute; top: -20px; left: -20px; width: 100%; height: 100%; background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%); z-index: -1; border-radius: 20px; filter: blur(30px); opacity: 0.5;"></div>
+          <div class="service-card shadow-sm p-4 rounded bg-white h-100">
+            <img src="img/react.png" alt="React.js Development" class="mb-3" width="60">
+            <h5 class="fw-bold text-primary">React.js Development</h5>
+            <p class="text-muted">
+              Create fast, responsive, and dynamic user interfaces with React.js. We deliver highly interactive front-end solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- WordPress Development -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="position-relative">
+          <!-- Gradient Background -->
+          <div style="position: absolute; top: -20px; left: -20px; width: 100%; height: 100%; background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%); z-index: -1; border-radius: 20px; filter: blur(30px); opacity: 0.5;"></div>
+          <div class="service-card shadow-sm p-4 rounded bg-white h-100">
+            <img src="img/wordpress.png" alt="WordPress Development" class="mb-3" width="60">
+            <h5 class="fw-bold text-info">WordPress Development</h5>
+            <p class="text-muted">
+              Professional WordPress development for websites, blogs, and custom plugins. SEO-friendly and easy-to-manage solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHP Web Development -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+        <div class="position-relative">
+          <!-- Gradient Background -->
+          <div style="position: absolute; top: -20px; left: -20px; width: 100%; height: 100%; background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%); z-index: -1; border-radius: 20px; filter: blur(30px); opacity: 0.5;"></div>
+          <div class="service-card shadow-sm p-4 rounded bg-white h-100">
+            <img src="img/php.png" alt="PHP Development" class="mb-3" width="60">
+            <h5 class="fw-bold text-warning">PHP Development</h5>
+            <p class="text-muted">
+              Scalable and secure web applications using PHP and popular frameworks like Laravel, ensuring performance and reliability.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shopify Development -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="550">
+        <div class="position-relative">
+          <!-- Gradient Background -->
+          <div style="position: absolute; top: -20px; left: -20px; width: 100%; height: 100%; background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%); z-index: -1; border-radius: 20px; filter: blur(30px); opacity: 0.5;"></div>
+          <div class="service-card shadow-sm p-4 rounded bg-white h-100">
+            <img src="img/shopify.png" alt="Shopify Development" class="mb-3" width="60">
+            <h5 class="fw-bold text-success">Shopify Development</h5>
+            <p class="text-muted">
+              We build high-converting Shopify stores with custom themes, apps, and integrations to maximize your online sales.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Stack Development -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="600">
+        <div class="position-relative">
+          <!-- Gradient Background -->
+          <div style="position: absolute; top: -20px; left: -20px; width: 100%; height: 100%; background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%); z-index: -1; border-radius: 20px; filter: blur(30px); opacity: 0.5;"></div>
+          <div class="service-card shadow-sm p-4 rounded bg-white h-100">
+            <img src="img/fullstack.png" alt="Full Stack Development" class="mb-3" width="60">
+            <h5 class="fw-bold text-dark">Full Stack Development</h5>
+            <p class="text-muted">
+              End-to-end development expertise using front-end and back-end technologies like React, Node.js, Laravel, and MySQL.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- API Integration Services -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="650">
+        <div class="position-relative">
+          <!-- Gradient Background -->
+          <div style="position: absolute; top: -20px; left: -20px; width: 100%; height: 100%; background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%); z-index: -1; border-radius: 20px; filter: blur(30px); opacity: 0.5;"></div>
+          <div class="service-card shadow-sm p-4 rounded bg-white h-100">
+            <img src="img/api.png" alt="API Integration" class="mb-3" width="60">
+            <h5 class="fw-bold text-secondary">API Integration</h5>
+            <p class="text-muted">
+              Connect your applications with third-party APIs for payments, CRM, social media, and more to streamline your business operations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Our Web Design and Web Development Services end -->
+
+
+
+<!-- Our Process Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Our Process</h2>
+    <div class="position-relative ps-md-5">
+
+      <!-- Vertical line -->
+      <div class="position-absolute top-0 start-50 translate-middle-x bg-primary" style="width: 4px; height: 100%;"></div>
+
+      <!-- Step 1 - Discover -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 mb-3 mb-md-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+          <div class="p-4 bg-white rounded shadow">
+            <p class="mb-0 text-muted">At Inimist Technology, we turn visions into reality. We start by understanding your business needs. We perform thorough research and understand your goals, target audiences, and competition to create a competitive strategy that propels your business to new heights.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-start text-center position-relative">
+          <div class="d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle shadow" style="width: 50px; height: 50px; position: absolute; left: 50%; transform: translateX(-50%);">
+            <i class="bi bi-search"></i>
+          </div>
+          <h5 class="fw-bold mt-4">Discover</h5>
+        </div>
+      </div>
+
+      <!-- Step 2 - Design -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6 mb-3 mb-md-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+          <div class="p-4 bg-white rounded shadow">
+            <p class="mb-0 text-muted">Next comes the design phase where our graphic and web designers create each element, combining aesthetics and functionality for a seamless user experience. In this stage, your brand's essence comes alive, ready to captivate and inspire your target audience.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-start text-center position-relative">
+          <div class="d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle shadow" style="width: 50px; height: 50px; position: absolute; left: 50%; transform: translateX(-50%);">
+            <i class="bi bi-pencil-square"></i>
+          </div>
+          <h5 class="fw-bold mt-4">Design</h5>
+        </div>
+      </div>
+
+      <!-- Step 3 - Develop -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 mb-3 mb-md-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+          <div class="p-4 bg-white rounded shadow">
+            <p class="mb-0 text-muted">Our developers turn the design into a functional website with thorough coding. We develop each feature and interaction with precision, ensuring a smooth UX. In this stage, we ensure that your virtual presence evolves into a dynamic platform that drives results.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-start text-center position-relative">
+          <div class="d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle shadow" style="width: 50px; height: 50px; position: absolute; left: 50%; transform: translateX(-50%);">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h5 class="fw-bold mt-4">Develop</h5>
+        </div>
+      </div>
+
+      <!-- Step 4 - Launch and Optimize -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6 mb-3 mb-md-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+          <div class="p-4 bg-white rounded shadow">
+            <p class="mb-0 text-muted">After launch, we continue optimizing your website or app for performance, user behavior, and conversion rates. We ensure your platform continues to grow and serve your business effectively.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-start text-center position-relative">
+          <div class="d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle shadow" style="width: 50px; height: 50px; position: absolute; left: 50%; transform: translateX(-50%);">
+            <i class="bi bi-rocket-takeoff"></i>
+          </div>
+          <h5 class="fw-bold mt-4">Launch & Optimize</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!---------------- Our FAQ Start------------------------>
+<div class="container py-5" id="faqSection">
+  <h2 class="text-center mb-4 text-white">Frequently Asked Questions</h2>
+  <div class="accordion" id="faqAccordion">
+
+    <div class="faq-item border rounded mb-2 p-3" onclick="toggleFAQ(this)">
+      <div class="faq-question d-flex justify-content-between">
+        Are your websites responsive and user-friendly?
+        <span class="faq-toggle">&#9660;</span>
+      </div>
+      <div class="faq-answer">
+        Absolutely, the websites we develop are responsive and user-friendly, as well as SEO-friendly. Our website designers make sure they look good in any screen size, be it a mobile or tablet.
+      </div>
+    </div>
+
+    <div class="faq-item border rounded mb-2 p-3" onclick="toggleFAQ(this)">
+      <div class="faq-question d-flex justify-content-between">
+        How can LDT Technology manage payment gateways and shipping integration on eCommerce websites?
+        <span class="faq-toggle">&#9660;</span>
+      </div>
+      <div class="faq-answer">
+        We seamlessly integrate payment gateways and shipping APIs that best suit your business requirements, ensuring a smooth transaction and delivery process.
+      </div>
+    </div>
+
+    <div class="faq-item border rounded mb-2 p-3" onclick="toggleFAQ(this)">
+      <div class="faq-question d-flex justify-content-between">
+        Do you make customized websites or pre-built templates?
+        <span class="faq-toggle">&#9660;</span>
+      </div>
+      <div class="faq-answer">
+        We offer both options! Our team can design fully customized websites or use pre-built templates based on your budget and timeline.
+      </div>
+    </div>
+
+    <div class="faq-item border rounded mb-2 p-3" onclick="toggleFAQ(this)">
+      <div class="faq-question d-flex justify-content-between">
+        Do you provide post development support services?
+        <span class="faq-toggle">&#9660;</span>
+      </div>
+      <div class="faq-answer">
+        Yes, we offer ongoing support services including maintenance, updates, backups, and more to keep your website running smoothly.
+      </div>
+    </div>
+
+    <div class="faq-item border rounded mb-2 p-3" onclick="toggleFAQ(this)">
+      <div class="faq-question d-flex justify-content-between">
+        How much does a website design and development cost?
+        <span class="faq-toggle">&#9660;</span>
+      </div>
+      <div class="faq-answer">
+        Pricing varies based on project complexity. Contact us for a custom quote tailored to your specific needs.
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-------------------- Our FAQ End---------------------->
+ <!--------------------- Footer Start ----------------------------------->
+    <div class="container-fluid footer wow fadeIn" style="background-color: #0d6efd;" data-wow-delay=".3s">
+
+        <div class="container pt-5 pb-4">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6 "> 
+                    <a href="index.html">
+                        <img src="img/logo2.png" alt="inimisttech Logo" class="img-fluid" style="max-height: 50px;"></a>
+                    <p class="mt-4 text-light">Inimist Technologies is a Web Design & Development company located in
+                        Mohali, Chandigarh area. We offer various types of IT services and web consultancy. We majorly
+                        work in Web & Mobile App Development, Search Engine Services.</p>
+                    <div class="d-flex hightech-link">
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
+                                class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
+                                class="fab fa-twitter text-primary"></i></a>
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
+                                class="fab fa-instagram text-primary"></i></a>
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i
+                                class="fab fa-linkedin-in text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-white-50">Short Link</a>
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About
+                            us</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact
+                            us</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our
+                            Services</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our
+                            Projects</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest
+                            Blog</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-white-50">Help Link</a>
+                    <div class="mt-4 d-flex flex-column help-link">
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms
+                            Of use</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy
+                            Policy</a>
+                        <a href="" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                        <a href="" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
+                        <a href="" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-white-50">Contact Us</a>
+                    <div class="text-white mt-4 d-flex flex-column contact-link">
+                        <a href="#" class="pb-3 text-light border-bottom border-primary"><i
+                                class="fas fa-map-marker-alt text-secondary me-2"></i> Moahli Tower, Punjab, India</a>
+                        <a href="#" class="py-3 text-light border-bottom border-primary"><i
+                                class="fas fa-phone-alt text-secondary me-2"></i>9876831310</a>
+                        <a href="#" class="py-3 text-light border-bottom border-primary"><i
+                                class="fas fa-envelope text-secondary me-2"></i><img src="img/email2.png" alt="inimisttech Logo" class="img-fluid" style="max-height: 50px;"></a>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="text-light mt-5 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-light"><a href="#" class="text-light"><i
+                                class="fas fa-copyright text-white me-2"></i>inimisttech</a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+
+                    <span class="text-light">Developed By<a href="https://inimisttech" class="text-light"> Inimistetch
+                        </a><a href="" </span>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up text-white"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!-- Animations (using Animate.css) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  // Initialize AOS
+  AOS.init({
+    duration: 1000, // Duration of the animation
+    once: true, // Ensures the animation happens only once
+    offset: 200, // Triggers the animation when scrolled to this position
+  });
+</script>
+
+
+<script>
+  function toggleFAQ(element) {
+    const isActive = element.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+    if (!isActive) {
+      element.classList.add('active');
+    }
+  }
+</script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  function toggleFAQ(faqItem) {
+    const answer = faqItem.querySelector('.faq-answer');
+    const toggle = faqItem.querySelector('.faq-toggle');
+
+    if (answer.style.display === 'block') {
+      answer.style.display = 'none';
+      toggle.innerHTML = '&#9660;';
+    } else {
+      answer.style.display = 'block';
+      toggle.innerHTML = '&#9650;';
+    }
+  }
+</script>
+
+
+</body>
+
+</html>
